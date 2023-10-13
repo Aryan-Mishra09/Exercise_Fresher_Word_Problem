@@ -22,6 +22,38 @@ Compounded words are the words formed using one or more of the valid words only 
   - Clone the repository to your local machine:"https://github.com/Aryan-Mishra09/Exercise_Fresher_Word_Problem.git" 
   - Navigate to the project directory:"cd compound-word-finder"
   - Compile the Java program:"javac CompoundWordFinder.java"
+
+ # Approach
+ 1. Create a Java Class:
+
+Create a Java class named CompoundWordFinder. This class will contain methods for building a data structure to store words, finding prefixes of words, and finding the longest compound words.
+
+2. Define Data Structures:
+
+Create a HashSet to store valid words. This set will be used to check if a word exists in the list of valid words.
+Create a Deque to maintain a queue of <word, remainder> pairs. This queue will be used to process words and their remaining suffixes.
+3. Create a Constructor:
+
+Define a constructor for the CompoundWordFinder class. In the constructor, initialize the wordSet and wordQueue data structures.
+
+4. Define a Nested Class:
+
+Create a nested class, WordPart, to represent a word and its remainder (suffix). This class will be used to store word-suffix pairs in the queue.
+
+5. Read Words from File:
+
+Create a method, such as addWordsFromFile, to read words from a file. Open and read the file line by line, trimming each line to remove leading and trailing spaces. Add these words to the wordSet and find prefixes for each word to create initial <word, remainder> pairs in the wordQueue.
+
+6. Find Prefixes:
+
+Implement a method, such as getPrefixes, to find prefixes for a given word. Iterate through the characters of the word and check if the current prefix exists in the wordSet. If a prefix is found, add it to a deque of prefixes.
+
+7. Find Longest Compound Words:
+
+Create a method, such as findLongestCompoundWords, to find the longest compound words. Initialize variables to keep track of the longest and second longest compound words. Process elements from the wordQueue by examining each word and its remainder.
+
+If the remainder exists in the wordSet and the current word is longer than the longest found so far, update the longest and second longest words.
+If not, find prefixes for the remainder and generate new <word, remainder> pairs to be added to the wordQueue.
  
  # Sample Input File
    Use the provided Input_01.txt and Input_02.txt file as a sample input to test the program.
