@@ -16,9 +16,13 @@ Compounded words are the words formed using one or more of the valid words only 
 - Using a breadth-first search algorithm, the program explores the possible compound words by removing prefixes and checking if the remaining part is also a valid word from the input list.
 - The program keeps track of the longest and second-longest compound words it discovers.
 
-  # Source Code Execution
-  # Requirements
+ # Source Code Execution
+ # Requirements
   - Java Development Kit installed on your system.
-  - Clone the repository to your local machine:"git clone 
+  - Clone the repository to your local machine:"https://github.com/Aryan-Mishra09/Exercise_Fresher_Word_Problem.git" 
   - Navigate to the project directory:"cd compound-word-finder"
   - Compile the Java program:"javac CompoundWordFinder.java"
+ 
+ # Sample Input File
+   Use the provided Input_01.txt and Input_02.txt file as a sample input to test the program.
+   Output is shown in the form of png file named as OUTPUT1.png and OUTPUT2.png 
