@@ -32,6 +32,7 @@ Create a Java class named CompoundWordFinder. This class will contain methods fo
 
 Create a HashSet to store valid words. This set will be used to check if a word exists in the list of valid words.
 Create a Deque to maintain a queue of <word, remainder> pairs. This queue will be used to process words and their remaining suffixes.
+
 3. Create a Constructor:
 
 Define a constructor for the CompoundWordFinder class. In the constructor, initialize the wordSet and wordQueue data structures.
